@@ -41,6 +41,9 @@ html:not([lang=en]) [lang=en], html[lang=en] [lang=pt]{display:none}
 .lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex-shrink:0}
 .lang button{font:inherit;font-size:.78rem;font-weight:600;border:0;background:transparent;color:var(--muted);padding:4px 12px;cursor:pointer}
 .lang button[aria-pressed=true]{background:var(--accent);color:var(--bg)}
+.go{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin:14px 0 4px;font-weight:500}
+.go .btn{background:var(--accent);color:var(--bg);border-radius:8px;padding:6px 14px;font-weight:600}
+.go .btn:hover{text-decoration:none;opacity:.9}
 </style>
 </head>
 <body>
@@ -63,7 +66,7 @@ html:not([lang=en]) [lang=en], html[lang=en] [lang=pt]{display:none}
   <h2><span lang="pt">Projetos principais</span><span lang="en">Main projects</span></h2>
 
   <article class="card">
-    <a href="https://github.com/gcabralcavalcanti/personal-ai-agents"><img class="shot" src="img/agents.jpg" alt="Painel de hábitos gerado pela demonstração dos agentes" loading="lazy"></a>
+    <a href="https://gcabralcavalcanti.github.io/personal-ai-agents/"><img class="shot" src="img/agents.jpg" alt="Painel de hábitos gerado pela demonstração dos agentes" loading="lazy"></a>
     <div class="row"><h3><a href="https://github.com/gcabralcavalcanti/personal-ai-agents"><span lang="pt">Agentes pessoais de IA</span><span lang="en">Personal AI agents</span></a></h3><span class="badge"><span lang="pt">recorte de sistema privado</span><span lang="en">excerpt from a private system</span></span></div>
     <p><span lang="pt">Agentes no Claude Code que cuidam da minha agenda, dos meus estudos, dos hábitos e da carreira. Nenhum deles mexe nos meus dados sem passar por uma checagem e sem a minha aprovação.</span><span lang="en">Agents built in Claude Code that manage my calendar, studies, habits and job search. None of them can change my data without passing a check and getting my approval.</span></p>
     <ul>
@@ -72,12 +75,12 @@ html:not([lang=en]) [lang=en], html[lang=en] [lang=pt]{display:none}
       <li><span lang="pt">Organizam a semana pelo meu método de rotina, o A.F.A.M.: estruturar o material (Architecting), resolver o problema (Frameact), revisar no Anki (Anking) e manter os projetos andando, sem funcionalidade nova (Maintenance)</span><span lang="en">They plan my week around my own routine method, A.F.A.M.: build the material (Architecting), solve the problem (Frameact), review in Anki (Anking) and keep projects running, with no new features (Maintenance)</span></li>
       <li><span lang="pt">Aqui está um recorte com dados fictícios; uso o sistema completo com os meus dados reais</span><span lang="en">This repository is an excerpt with fictitious data; I run the full system on my own data</span></li>
     </ul>
-    <p class="sub"><a href="https://gcabralcavalcanti.github.io/personal-ai-agents/"><span lang="pt">Ver demonstração</span><span lang="en">Live demo</span></a></p>
+    <p class="go"><a class="btn" href="https://gcabralcavalcanti.github.io/personal-ai-agents/"><span lang="pt">Ver funcionando</span><span lang="en">See it working</span></a><a href="https://github.com/gcabralcavalcanti/personal-ai-agents/blob/main/overview.pdf">PDF</a><a href="https://github.com/gcabralcavalcanti/personal-ai-agents"><span lang="pt">Código</span><span lang="en">Code</span></a></p>
     <div class="tags"><span>Python</span><span>Claude Code</span><span><span lang="pt">API do Claude</span><span lang="en">Claude API</span></span></div>
   </article>
 
   <article class="card">
-    <a href="https://github.com/gcabralcavalcanti/valuation-gerdau"><img class="shot" src="img/valuation.jpg" alt="Valor justo da Gerdau por data, contra o preço" loading="lazy"></a>
+    <a href="https://gcabralcavalcanti.github.io/valuation-gerdau/"><img class="shot" src="img/valuation.jpg" alt="Valor justo da Gerdau por data, contra o preço" loading="lazy"></a>
     <div class="row"><h3><a href="https://github.com/gcabralcavalcanti/valuation-gerdau"><span lang="pt">Valuation da Gerdau com IA</span><span lang="en">Gerdau valuation with AI</span></a></h3><span class="badge"><span lang="pt">dados públicos</span><span lang="en">public data</span></span></div>
     <p><span lang="pt">Meu TCC é um valuation da Gerdau por fluxo de caixa descontado, em cinco datas do ciclo do aço. O modelo é meu; em volta dele montei quatro revisões feitas com IA.</span><span lang="en">My undergraduate thesis values the steelmaker Gerdau using discounted cash flow at five points in the steel cycle. The model is my own; around it I built four AI-powered reviews.</span></p>
     <ul>
@@ -85,25 +88,26 @@ html:not([lang=en]) [lang=en], html[lang=en] [lang=pt]{display:none}
       <li><span lang="pt">Refaz as contas do zero a partir dos dados públicos da CVM e aponta onde diverge</span><span lang="en">Rebuilds the numbers from scratch from public filings and shows where they differ</span></li>
       <li><span lang="pt">Testa especificações alternativas e prepara as perguntas que a banca pode fazer</span><span lang="en">Tests alternative specifications and prepares the questions the thesis committee is likely to ask</span></li>
     </ul>
-    <p class="sub"><a href="https://github.com/gcabralcavalcanti/valuation-gerdau/blob/main/final-report.pdf"><span lang="pt">Relatório final (PDF)</span><span lang="en">Final report (PDF)</span></a></p> <p class="sub"><span lang="pt">Dados e notebook do TCC:</span><span lang="en">Thesis data and notebook:</span> <a href="https://github.com/gcabralcavalcanti/tcc-valuation-gerdau">tcc-valuation-gerdau</a></p>
+    <p class="go"><a class="btn" href="https://gcabralcavalcanti.github.io/valuation-gerdau/"><span lang="pt">Ver funcionando</span><span lang="en">See it working</span></a><a href="https://github.com/gcabralcavalcanti/valuation-gerdau/blob/main/final-report.pdf">PDF</a><a href="https://github.com/gcabralcavalcanti/valuation-gerdau"><span lang="pt">Código</span><span lang="en">Code</span></a></p>
+    <p class="sub"><span lang="pt">Dados e notebook do TCC:</span><span lang="en">Thesis data and notebook:</span> <a href="https://github.com/gcabralcavalcanti/tcc-valuation-gerdau">tcc-valuation-gerdau</a></p>
     <div class="tags"><span>valuation</span><span>Python</span><span><span lang="pt">API do Claude</span><span lang="en">Claude API</span></span></div>
   </article>
 
   <article class="card">
-    <a href="https://github.com/gcabralcavalcanti/macro-terminal"><img class="shot" src="img/terminal.jpg" alt="Tela do Macro Terminal" loading="lazy"></a>
+    <a href="https://gcabralcavalcanti.github.io/macro-terminal/"><img class="shot" src="img/terminal.jpg" alt="Tela do Macro Terminal" loading="lazy"></a>
     <div class="row"><h3><a href="https://github.com/gcabralcavalcanti/macro-terminal">Macro Terminal</a></h3><span class="badge"><span lang="pt">dados públicos</span><span lang="en">public data</span></span></div>
     <p><span lang="pt">Um terminal no estilo Bloomberg, só com dado público: juros, inflação, câmbio e atividade do Brasil e dos EUA, ações, balanços e comunicados de empresas.</span><span lang="en">A Bloomberg-style terminal built only on public data: rates, inflation, FX and activity in Brazil and the US, stocks, financial statements and company filings.</span></p>
     <ul>
       <li><span lang="pt">Os dados são baixados e conferidos sozinhos e a página se atualiza pelo GitHub</span><span lang="en">Data is downloaded and validated automatically, and the page refreshes itself through GitHub</span></li>
       <li><span lang="pt">A IA escreve um resumo da semana e responde perguntas sobre os dados; o código confere cada número que ela cita</span><span lang="en">The AI writes a weekly summary and answers questions about the data; the code checks every number it quotes</span></li>
       <li><span lang="pt">A ideia é que vire o painel central da minha rotina: além do mercado, as notícias que viram cards de estudo, vagas e metas, numa versão pessoal que não é pública</span><span lang="en">The plan is for it to become the central panel of my routine: besides markets, the news I turn into study cards, job openings and my goals, in a personal version that stays private</span></li>
-      <li>Página: <a href="https://gcabralcavalcanti.github.io/macro-terminal/">gcabralcavalcanti.github.io/macro-terminal</a></li>
     </ul>
+    <p class="go"><a class="btn" href="https://gcabralcavalcanti.github.io/macro-terminal/"><span lang="pt">Ver funcionando</span><span lang="en">See it working</span></a><a href="https://github.com/gcabralcavalcanti/macro-terminal/blob/main/overview.pdf">PDF</a><a href="https://github.com/gcabralcavalcanti/macro-terminal"><span lang="pt">Código</span><span lang="en">Code</span></a></p>
     <div class="tags"><span>Python</span><span><span lang="pt">API do Claude</span><span lang="en">Claude API</span></span><span><span lang="pt">dados públicos</span><span lang="en">public data</span></span></div>
   </article>
 
   <article class="card">
-    <a href="https://github.com/gcabralcavalcanti/applied-econometrics"><img class="shot" src="img/econometrics.jpg" alt="Gráfico de um dos estudos de econometria" loading="lazy"></a>
+    <a href="https://gcabralcavalcanti.github.io/applied-econometrics/"><img class="shot" src="img/econometrics.jpg" alt="Gráfico de um dos estudos de econometria" loading="lazy"></a>
     <div class="row"><h3><a href="https://github.com/gcabralcavalcanti/applied-econometrics"><span lang="pt">Econometria aplicada</span><span lang="en">Applied econometrics</span></a></h3><span class="badge"><span lang="pt">dados públicos</span><span lang="en">public data</span></span></div>
     <p><span lang="pt">Quatro estudos curtos em Python. Três vêm da minha parte de trabalhos de econometria da graduação (os textos completos, mais longos, envio se pedirem); o quarto, sobre escolha de fundos, usa dados públicos da CVM.</span><span lang="en">Four short empirical studies in Python. Three are based on my share of university econometrics coursework (the full papers are available on request); the fourth, on selecting investment funds, uses public data from Brazil's securities regulator (CVM).</span></p>
     <ul>
@@ -111,7 +115,7 @@ html:not([lang=en]) [lang=en], html[lang=en] [lang=pt]{display:none}
       <li><span lang="pt">Cada estudo baixa os dados, confere a base antes de estimar e explica por que cada modelo mudou</span><span lang="en">Each study pulls its own data, validates it before estimation and explains every change of specification</span></li>
       <li><span lang="pt">O texto dos relatórios é gerado automaticamente; o que importa é a parte quantitativa</span><span lang="en">The report text is generated automatically; the substance is the quantitative work</span></li>
     </ul>
-    <p class="sub"><a href="https://github.com/gcabralcavalcanti/applied-econometrics/tree/main/final-reports"><span lang="pt">Relatórios (PDF)</span><span lang="en">Reports (PDF)</span></a></p>
+    <p class="go"><a class="btn" href="https://gcabralcavalcanti.github.io/applied-econometrics/"><span lang="pt">Ver funcionando</span><span lang="en">See it working</span></a><a href="https://github.com/gcabralcavalcanti/applied-econometrics/blob/main/overview.pdf">PDF</a><a href="https://github.com/gcabralcavalcanti/applied-econometrics"><span lang="pt">Código</span><span lang="en">Code</span></a></p>
     <div class="tags"><span><span lang="pt">econometria</span><span lang="en">econometrics</span></span><span>Python</span><span><span lang="pt">dados públicos</span><span lang="en">public data</span></span></div>
   </article>
 </section>
@@ -122,31 +126,31 @@ html:not([lang=en]) [lang=en], html[lang=en] [lang=pt]{display:none}
 
   <div class="grid">
   <article class="card">
-    <a href="https://github.com/gcabralcavalcanti/anki-librarian-mcp"><img class="shot" src="img/anki.jpg" alt="Simulação do material de estudo virando flashcards" loading="lazy"></a>
+    <a href="https://gcabralcavalcanti.github.io/anki-librarian-mcp/"><img class="shot" src="img/anki.jpg" alt="Simulação do material de estudo virando flashcards" loading="lazy"></a>
     <div class="row"><h3><a href="https://github.com/gcabralcavalcanti/anki-librarian-mcp">Anki Librarian</a></h3><span class="badge"><span lang="pt">ferramenta</span><span lang="en">tool</span></span></div>
     <p><span lang="pt">Liga um assistente de IA ao Anki, o app de flashcards, para criar e organizar cards com segurança. Saiu do agente que cuida dos meus estudos.</span><span lang="en">Connects an AI assistant to Anki, the flashcard app, to create and organise cards safely. It grew out of the agent that manages my studies.</span></p>
     <ul>
       <li><span lang="pt">Antes de gravar, mostra o que vai fazer e espera a aprovação</span><span lang="en">Shows what it is about to write and waits for approval</span></li>
       <li><span lang="pt">Evita card repetido e mantém as tags organizadas</span><span lang="en">Prevents duplicate cards and keeps tags consistent</span></li>
     </ul>
-    <p class="sub"><a href="https://gcabralcavalcanti.github.io/anki-librarian-mcp/"><span lang="pt">Ver demonstração</span><span lang="en">Live demo</span></a></p>
+    <p class="go"><a class="btn" href="https://gcabralcavalcanti.github.io/anki-librarian-mcp/"><span lang="pt">Ver funcionando</span><span lang="en">See it working</span></a><a href="https://github.com/gcabralcavalcanti/anki-librarian-mcp/blob/main/overview.pdf">PDF</a><a href="https://github.com/gcabralcavalcanti/anki-librarian-mcp"><span lang="pt">Código</span><span lang="en">Code</span></a></p>
     <div class="tags"><span>Python</span><span>MCP</span><span>Anki</span></div>
   </article>
 
   <article class="card">
-    <a href="https://github.com/gcabralcavalcanti/personal-finance-automation"><img class="shot" src="img/finance.jpg" alt="Resumo do mês das finanças pessoais" loading="lazy"></a>
+    <a href="https://gcabralcavalcanti.github.io/personal-finance-automation/"><img class="shot" src="img/finance.jpg" alt="Resumo do mês das finanças pessoais" loading="lazy"></a>
     <div class="row"><h3><a href="https://github.com/gcabralcavalcanti/personal-finance-automation"><span lang="pt">Automação de finanças pessoais</span><span lang="en">Personal finance automation</span></a></h3><span class="badge"><span lang="pt">dados sintéticos</span><span lang="en">synthetic data</span></span></div>
     <p><span lang="pt">Versão pública do sistema que uso nas minhas finanças. Importa o extrato do banco, classifica por regras e manda para a IA só o que as regras não pegam.</span><span lang="en">Public version of the system I use for my personal finances. It imports bank statements, categorises transactions with rules and sends only what the rules miss to the AI.</span></p>
     <ul>
       <li><span lang="pt">O que a IA não tem certeza passa por mim e vira regra nova, então ela é chamada cada vez menos</span><span lang="en">Anything the AI is unsure about comes to me for review and becomes a new rule, so the AI is needed less over time</span></li>
       <li><span lang="pt">Relatório do mês pronto, sem lançamento duplicado</span><span lang="en">A ready-made monthly report, with no duplicate entries</span></li>
     </ul>
-    <p class="sub"><a href="https://github.com/gcabralcavalcanti/personal-finance-automation/blob/main/final-report.pdf"><span lang="pt">Relatório final (PDF)</span><span lang="en">Final report (PDF)</span></a></p>
+    <p class="go"><a class="btn" href="https://gcabralcavalcanti.github.io/personal-finance-automation/"><span lang="pt">Ver funcionando</span><span lang="en">See it working</span></a><a href="https://github.com/gcabralcavalcanti/personal-finance-automation/blob/main/final-report.pdf">PDF</a><a href="https://github.com/gcabralcavalcanti/personal-finance-automation"><span lang="pt">Código</span><span lang="en">Code</span></a></p>
     <div class="tags"><span>Python</span><span><span lang="pt">API do Claude</span><span lang="en">Claude API</span></span><span><span lang="pt">dados sintéticos</span><span lang="en">synthetic data</span></span></div>
   </article>
 
   <article class="card">
-    <a href="https://github.com/gcabralcavalcanti/land-deals-automation"><img class="shot" src="img/land.jpg" alt="Painel da carteira de terrenos" loading="lazy"></a>
+    <a href="https://gcabralcavalcanti.github.io/land-deals-automation/"><img class="shot" src="img/land.jpg" alt="Painel da carteira de terrenos" loading="lazy"></a>
     <div class="row"><h3><a href="https://github.com/gcabralcavalcanti/land-deals-automation"><span lang="pt">Relatórios de desempenho de terrenos</span><span lang="en">Land deal performance reports</span></a></h3><span class="badge"><span lang="pt">dados sintéticos</span><span lang="en">synthetic data</span></span></div>
     <p><span lang="pt">Versão pública, com números sintéticos, do tipo de análise que eu fazia na compra e venda de terrenos: se vale comprar, se compensa lotear ou vender inteiro, e em quanto tempo o dinheiro volta.</span><span lang="en">Public version, with synthetic numbers, of the kind of analysis I did when buying and selling land: whether to buy, whether to subdivide or sell whole, and how long it takes to recover the capital.</span></p>
     <ul>
@@ -154,8 +158,7 @@ html:not([lang=en]) [lang=en], html[lang=en] [lang=pt]{display:none}
       <li><span lang="pt">Fluxo de caixa, VPL, TIR e cenários em Excel, painel e PDF</span><span lang="en">Cash flow, NPV, IRR and scenarios in Excel, a dashboard and a PDF</span></li>
       <li><span lang="pt">A IA transforma a descrição de um terreno em premissas e escreve um parecer de cada um</span><span lang="en">The AI turns a written description of a plot into model assumptions and writes an investment memo for each one</span></li>
     </ul>
-    <p class="sub"><a href="https://gcabralcavalcanti.github.io/land-deals-automation/"><span lang="pt">Ver demonstração</span><span lang="en">Live demo</span></a></p>
-    <p class="sub"><a href="https://github.com/gcabralcavalcanti/land-deals-automation/blob/main/final-report.pdf"><span lang="pt">Relatório final (PDF)</span><span lang="en">Final report (PDF)</span></a></p>
+    <p class="go"><a class="btn" href="https://gcabralcavalcanti.github.io/land-deals-automation/"><span lang="pt">Ver funcionando</span><span lang="en">See it working</span></a><a href="https://github.com/gcabralcavalcanti/land-deals-automation/blob/main/overview.pdf">PDF</a><a href="https://github.com/gcabralcavalcanti/land-deals-automation"><span lang="pt">Código</span><span lang="en">Code</span></a></p>
     <div class="tags"><span>Python</span><span>Excel</span><span><span lang="pt">API do Claude</span><span lang="en">Claude API</span></span></div>
   </article>
 
